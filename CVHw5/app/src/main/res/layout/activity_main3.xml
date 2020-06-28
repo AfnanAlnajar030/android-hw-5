@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/shape">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/textBubble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/round_green"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/round_green" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="youre in "
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#655c56"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <ImageView
+        android:id="@+id/backgroundss"
+        android:layout_width="240dp"
+        android:layout_height="245dp"
+        tools:srcCompat="@drawable/round_light_green"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/round_green"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/fit"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_green"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/sike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="650dp"
+        android:layout_marginTop="10dp"
+        android:text="Results"
+        android:textColor="#655c56"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

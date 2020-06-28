@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="@drawable/shape">
+
+    <RelativeLayout
+        android:id="@+id/leftPanel"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/big_green">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_green"
+            android:cropToPadding="true"
+            android:padding="7dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="First name not entered"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#655c56"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name1"
+            android:layout_marginTop="60dp"
+            android:text="Last name not entered"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#655c56"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="serif"
+            android:text="Short Description"
+            android:textAlignment="textStart"
+            android:textColor="#655c56"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/CV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="serif"
+        android:text="My cv:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ageDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@+id/CV"
+        android:layout_marginTop="70dp"
+        android:text="My age is:"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/age2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@+id/ageDescription"
+        android:layout_marginTop="60dp"
+        android:text="Age"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_light_green"
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/jobDetails"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/age2"
+        android:layout_marginTop="60dp"
+        android:text="My job is: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:id="@+id/job2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/jobDetails"
+        android:layout_marginTop="60dp"
+        android:text="Job"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_light_green"
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/job2"
+        android:layout_marginTop="60dp"
+        android:text="Contact me :"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        />
+    <TextView
+        android:id="@+id/phone2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/contact"
+        android:layout_marginTop="60dp"
+        android:text="Phone Number"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_brown"
+        android:fontFamily="serif"
+        android:autoLink="phone"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/email2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/leftPanel"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/phone2"
+        android:layout_marginTop="90dp"
+        android:text="Email"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_brown"
+        android:fontFamily="serif"
+        android:autoLink="email"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_brown"
+        android:text="A P P L Y"
+        android:fontFamily="monospace"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@id/email2"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

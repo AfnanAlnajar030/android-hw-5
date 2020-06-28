@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="Fill in the following to receive your CV:"
+        android:layout_centerHorizontal="true"
+        android:textColor="#655c56"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignTop="@id/title"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_green"
+            android:ems="10"
+            android:hint="First Name"
+            android:textAlignment="center"
+            android:textColorHint="#655c56"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#655c56"
+            />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_green"
+            android:ems="10"
+            android:hint="Last Name"
+            android:textAlignment="center"
+            android:textColorHint="#655c56"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#655c56"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_green"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#655c56"
+        android:text=""
+        android:textColor="#655c56"/>
+
+    <EditText
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/age"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_green"
+        android:ems="10"
+        android:hint="Job"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:textColorHint="#655c56"
+        android:layout_marginRight="30dp"
+        android:textColor="#655c56"/>
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@id/job"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_green"
+        android:ems="10"
+        android:inputType="phone"
+        android:text=""
+        android:hint="Phone Number"
+        android:textAlignment="center"
+        android:textColorHint="#655c56"
+        android:textColor="#655c56"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@id/phone_number"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_green"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Email"
+        android:textAlignment="center"
+        android:textColorHint="#655c56"
+        android:textColor="#655c56"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_brown"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:text="N e x t"
+        android:textSize="20dp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/segmented2"
+        android:layout_marginBottom="60dp"
+        android:text="Choose a gender:"
+        android:layout_alignLeft="@id/job"
+        android:layout_marginLeft="240dp"
+        android:textAlignment="textStart"
+        android:textColor="#655c56"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="serif" />
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segmented2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:sc_border_width="5px"
+        app:sc_tint_color="#655c56"
+        app:sc_corner_radius="30dp"
+        android:layout_alignBottom="@id/ep"
+        android:layout_alignLeft="@id/phone_number"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/green_no_border"
+        android:textColor="#655c56"
+        app:sc_checked_text_color="#effcef"
+        android:animationCache="true"
+        >
+
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Female"
+            style="@style/RadioButton"
+            android:textColor="#655c56"
+            />
+
+        <RadioButton
+            android:id="@+id/male"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Male"
+            android:textColor="#655c56" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience:"
+        android:layout_alignBottom="@id/ep"
+        android:layout_alignLeft="@id/email"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="240dp"
+        android:textSize="20sp"
+        android:textColor="#655c56"
+        android:textStyle="bold"/>
+
+    <Switch
+        android:id="@+id/ep"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="5 years experience"
+        android:layout_alignBottom="@+id/next"
+        android:layout_alignLeft="@id/email"
+        android:layout_marginLeft="235dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/round_green"
+        android:textColor="#655c56"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>
